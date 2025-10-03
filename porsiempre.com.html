@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>por_siempre.com — Por Siempre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --lila:#BFA3FF;
+      --fondo:#F5EEFF;
+      --card: rgba(255,255,255,0.85);
+      --text:#2b1b3a;
+      --muted:#6b5876;
+      --accent:#ff6fa3;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--fondo),#FFFFFF);font-family:Inter,system-ui,Arial,sans-serif;color:var(--text)}
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px}
+    .card{
+      width:100%;max-width:980px;background:var(--card);border-radius:20px;box-shadow:0 12px 40px rgba(80,40,120,0.08);padding:36px;backdrop-filter:blur(8px);
+    }
+    header{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+    .title{
+      font-family:'Playfair Display', serif;font-weight:900;font-size:56px;color:var(--lila);margin:0;line-height:0.95;letter-spacing:-1px;text-transform:none
+    }
+    .subtitle{color:var(--muted);margin:0;font-size:14px}
+
+    .content{display:grid;grid-template-columns:1fr 360px;gap:26px;margin-top:26px;align-items:start}
+    .poem{background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.5));padding:22px;border-radius:14px;border:1px solid rgba(185,150,230,0.18);font-size:18px;line-height:1.7;color:var(--text)}
+    .aside{display:flex;flex-direction:column;gap:12px}
+    .card-note{background:rgba(255,255,255,0.7);padding:14px;border-radius:12px;border:1px solid rgba(200,180,240,0.14);}
+    .domain{font-weight:600;color:var(--muted);font-size:13px}
+    .signature{margin-top:18px;display:flex;justify-content:space-between;align-items:center}
+    .sign-name{font-weight:700;color:var(--accent);font-family:'Playfair Display',serif}
+
+    footer{text-align:center;margin-top:28px;color:var(--muted);font-size:13px}
+
+    @media (max-width:880px){.content{grid-template-columns:1fr;}.title{font-size:40px}.card{padding:24px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" role="main">
+      <header>
+        <h1 class="title">Querida Eli</h1>
+        <p class="subtitle">para ti el amor de mi vida </p>
+      </header>
+
+      <section class="content">
+        <article class="poem" aria-labelledby="poema">
+          <h2 id="poema" style="display:none">Poema para Damarys</h2>
+
+          <p>
+Querida <strong>Damarys Elizabeth Castro Franco</strong>,
+          </p>
+
+          <p>
+Te nombro así, con cada letra que guarda mi corazón, porque en ti hallé la claridad que buscaba. Serás siempre la canción que no se olvida, la mirada que ordena mis días y la promesa que susurro cuando la noche me encuentra pensándote.
+          </p>
+
+          <p>
+Te amaré con la paciencia de los ríos y la ternura de las primeras mañanas; te amaré en las pequeñas cosas: en un silencio compartido, en una taza de café que se enfría, en la mano que aprieta la tuya sin decir palabra.
+          </p>
+
+          <p>
+Prometo cuidarte en las dudas, ser refugio en tus tempestades y compañero en cada intento. Mi amor por ti no es un instante: es una decisión diaria, una constancia que no entiende de condiciones, sólo de ganas.
+          </p>
+
+          <p>
+Si algún día el mundo pregunta por un nombre que explique mi calma, diré sin dudar: Damarys Elizabeth Castro Franco. Porque amarte es mi verdad más clara, mi mejor costumbre, mi elección de por vida.
+          </p>
+
+          <div class="signature">
+            <div style="font-size:14px;color:var(--muted)">Con toda mi alma,</div>
+            <div class="sign-name">Saul</div>
+          </div>
+        </article>
+
+        </aside>
+      </section>
+
+      <footer>
+        © por_siempre.com
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
